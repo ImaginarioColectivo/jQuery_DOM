@@ -5,7 +5,7 @@ $(document).ready(() => {
 console.log(data);
 
 var cont = $('.container');
-var mexico = $('.mexico');
+var mexico =$('.mexico');
 var peru = $('.peru');
 var chile = $('.chile');
 var everyone = $('.everyone');
@@ -91,3 +91,17 @@ $('#categorias').on('change', function(){
 
 
 
+=======
+$('#categorias').on('change', function(){
+// guardo el valor del select en la variable selection
+	var selection = $('#categorias').val();
+
+	if (selection === 'mexico'){
+		for (var i=0 < data.length; i++){
+			if (data[i].sede === 'mexico'){
+				mexico.append('')
+			}
+		}
+	}
+})
+>>>>>>> Stashed changes
